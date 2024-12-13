@@ -17,7 +17,26 @@ const translations = {
     en: "Safe, Effective, and Medically Supervised",
     he: "בטוח, יעיל ובפיקוח רפואי"
   },
-  // Add more translations as needed
+  benefits_title: {
+    en: "Program Benefits",
+    he: "יתרונות התוכנית"
+  },
+  how_it_works_title: {
+    en: "How It Works",
+    he: "איך זה עובד"
+  },
+  faq_title: {
+    en: "Frequently Asked Questions",
+    he: "שאלות נפוצות"
+  },
+  contact_title: {
+    en: "Start Your Journey Today",
+    he: "התחל את המסע שלך היום"
+  },
+  book_appointment: {
+    en: "Book Appointment",
+    he: "קבע תור"
+  }
 };
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
