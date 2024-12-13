@@ -14,31 +14,41 @@ const FAQSection = () => {
     {
       question: {
         en: "What is Semaglutide?",
-        he: "מה זה סמגלוטייד?"
+        he: "מהו סמגלוטיד?"
       },
       answer: {
         en: "Semaglutide is an FDA-approved medication that helps with weight management by regulating appetite and reducing food cravings.",
-        he: "סמגלוטייד הוא תרופה מאושרת FDA המסייעת בניהול משקל על ידי ויסות התיאבון והפחתת התשוקה למזון."
+        he: "סמגלוטיד הוא תרופה מאושרת FDA המסייעת בניהול משקל על ידי ויסות התיאבון והפחתת התשוקה למזון."
       }
     },
     {
       question: {
-        en: "How long does the program last?",
-        he: "כמה זמן נמשכת התוכנית?"
+        en: "How does Semaglutide work?",
+        he: "כיצד פועל סמגלוטיד?"
       },
       answer: {
-        en: "The program duration varies based on individual needs and goals, typically ranging from 3 to 12 months.",
-        he: "משך התוכנית משתנה בהתאם לצרכים וליעדים האישיים, בדרך כלל בין 3 ל-12 חודשים."
+        en: "Semaglutide works by mimicking a hormone that targets areas of the brain that regulate appetite and food intake.",
+        he: "סמגלוטיד פועל על ידי חיקוי הורמון שמתמקד באזורי המוח המווסתים תיאבון וצריכת מזון."
       }
     },
     {
       question: {
-        en: "Is medical supervision required?",
-        he: "האם נדרש פיקוח רפואי?"
+        en: "How long does it take to see results?",
+        he: "כמה זמן לוקח לרדת במשקל עם סמגלוטיד?"
       },
       answer: {
-        en: "Yes, our program includes regular medical supervision to ensure safety and optimize results.",
-        he: "כן, התוכנית שלנו כוללת פיקוח רפואי קבוע להבטחת הבטיחות ומיטוב התוצאות."
+        en: "Most patients begin to see results within the first few weeks of treatment, with significant results typically observed within 2-3 months.",
+        he: "רוב המטופלים מתחילים לראות תוצאות תוך מספר שבועות מתחילת הטיפול, עם תוצאות משמעותיות בדרך כלל תוך 2-3 חודשים."
+      }
+    },
+    {
+      question: {
+        en: "Is Semaglutide available at Lharzot?",
+        he: "האם סמגלוטיד זמין ב-lharzot?"
+      },
+      answer: {
+        en: "Yes, Semaglutide is available through Lharzot with a valid prescription from our licensed physicians.",
+        he: "כן, סמגלוטיד זמין דרך lharzot עם מרשם תקף מהרופאים המורשים שלנו."
       }
     }
   ];
@@ -46,14 +56,17 @@ const FAQSection = () => {
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4 max-w-3xl">
-        <h2 className="text-3xl font-bold text-center mb-12">
+        <h2 className="text-3xl font-bold text-center mb-4">
           {t('faq_title')}
         </h2>
+        <p className="text-center text-gray-600 mb-12">
+          {t('faq_subtitle')}
+        </p>
 
         <Accordion type="single" collapsible className="w-full">
           {faqs.map((faq, index) => (
             <AccordionItem key={index} value={`item-${index}`}>
-              <AccordionTrigger className="text-left">
+              <AccordionTrigger className="text-right">
                 {faq.question[language]}
               </AccordionTrigger>
               <AccordionContent>
