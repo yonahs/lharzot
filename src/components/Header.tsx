@@ -9,13 +9,13 @@ const Header = () => {
   return (
     <header className="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        {/* Logo always stays on the left */}
-        <div className="flex items-center order-1">
+        {/* Logo */}
+        <div className="flex-shrink-0">
           <img src="/logo.png" alt="Lharzot" className="h-10" />
         </div>
         
-        {/* Navigation and buttons always stay on the right */}
-        <div className="flex items-center gap-4 order-2">
+        {/* Navigation and buttons */}
+        <div className="flex items-center gap-4 flex-shrink-0">
           <Button
             variant="ghost"
             size="sm"
