@@ -11,7 +11,11 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
         <div className="flex-shrink-0">
-          <img src="/logo.png" alt="Lharzot" className="h-10" />
+          <img 
+            src="/lovable-uploads/21ea8878-5388-47f7-9265-478e05a21484.png" 
+            alt="Lharzot" 
+            className="h-12" 
+          />
         </div>
         
         {/* Navigation and buttons */}
