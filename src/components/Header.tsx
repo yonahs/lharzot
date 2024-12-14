@@ -7,7 +7,7 @@ const Header = () => {
   const { language, setLanguage } = useLanguage();
 
   return (
-    <header className="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
+    <header className="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm" dir="ltr">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
         <div className="flex-shrink-0">
@@ -15,7 +15,7 @@ const Header = () => {
         </div>
         
         {/* Navigation and buttons */}
-        <div className="flex items-center gap-4 flex-shrink-0">
+        <div className="flex items-center gap-4">
           <Button
             variant="ghost"
             size="sm"
