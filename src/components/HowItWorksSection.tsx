@@ -7,14 +7,14 @@ const HowItWorksSection = () => {
 
   const steps = [
     {
-      icon: <FileText className="w-12 h-12 text-black" />,
+      icon: <ClipboardList className="w-12 h-12 text-black" />,
       title: { 
-        en: "Digital Prescription Ready", 
-        he: "מרשם דיגיטלי מוכן" 
+        en: "Fill Questionnaire", 
+        he: "מילוי שאלון" 
       },
       description: {
-        en: "Prescription will be sent to your home within 72 hours",
-        he: "המרשם ישלח לבית מרקחת תוך 72 שעות"
+        en: "Fill out our short questionnaire",
+        he: "ענו על השאלון הקצר שלנו"
       }
     },
     {
@@ -29,14 +29,14 @@ const HowItWorksSection = () => {
       }
     },
     {
-      icon: <ClipboardList className="w-12 h-12 text-black" />,
+      icon: <FileText className="w-12 h-12 text-black" />,
       title: { 
-        en: "Fill Questionnaire", 
-        he: "מילוי שאלון" 
+        en: "Digital Prescription Ready", 
+        he: "מרשם דיגיטלי מוכן" 
       },
       description: {
-        en: "Fill out our short questionnaire",
-        he: "ענו על השאלון הקצר שלנו"
+        en: "Prescription will be sent to your home within 72 hours",
+        he: "המרשם ישלח לבית מרקחת תוך 72 שעות"
       }
     }
   ];
