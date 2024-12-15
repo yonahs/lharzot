@@ -20,9 +20,17 @@ export default {
     extend: {
       colors: {
         brand: {
-          primary: "#0066CC",
-          secondary: "#E6F0FF",
-          accent: "#FF9900"
+          primary: "#0066CC",    // Main blue from logo
+          secondary: "#E6F0FF",  // Light blue background
+          accent: "#FF9900",     // Orange accent
+          text: {
+            primary: "#1A1A1A",  // Dark text for better readability
+            secondary: "#4A5568" // Secondary text color
+          },
+          background: {
+            light: "#FFFFFF",
+            subtle: "#F7FAFC"
+          }
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -60,6 +68,12 @@ export default {
       },
       fontFamily: {
         heebo: ["Heebo", "sans-serif"],
+      },
+      spacing: {
+        'section': '6rem',
+      },
+      boxShadow: {
+        'card': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
       },
       keyframes: {
         fadeIn: {
