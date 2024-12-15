@@ -110,6 +110,76 @@ const FAQSection = () => {
         en: "Semaglutide is not recommended during pregnancy or while breastfeeding. If you become pregnant or are planning to become pregnant, consult your healthcare provider immediately.",
         he: "לא מומלץ להשתמש בסמגלוטיד במהלך ההיריון או ההנקה. אם את בהריון או מתכננת להיכנס להריון, התייעצי עם הרופא המטפל באופן מיידי."
       }
+    },
+    {
+      question: {
+        en: "What is the dosage of Semaglutide?",
+        he: "מהו המינון של סמגלוטיד?"
+      },
+      answer: {
+        en: "The dosage of Semaglutide typically starts at 0.25mg and gradually increases over time. Your healthcare provider will determine the appropriate dosage based on your individual needs and response to treatment.",
+        he: "המינון של סמגלוטיד מתחיל בדרך כלל ב-0.25 מ\"ג ועולה בהדרגה לאורך זמן. הרופא המטפל יקבע את המינון המתאים בהתאם לצרכים האישיים שלך והתגובה לטיפול."
+      }
+    },
+    {
+      question: {
+        en: "How to get insurance coverage for Ozempic?",
+        he: "כיצד לקבל כיסוי ביטוחי לאוזמפיק?"
+      },
+      answer: {
+        en: "Insurance coverage for Ozempic varies by provider. Contact your insurance company to understand your coverage options. Our team can help guide you through the process.",
+        he: "הכיסוי הביטוחי לאוזמפיק משתנה בין ספקי הביטוח. צור קשר עם חברת הביטוח שלך להבנת אפשרויות הכיסוי. הצוות שלנו יכול לעזור להנחות אותך בתהליך."
+      }
+    },
+    {
+      question: {
+        en: "How many doses are in an Ozempic pen?",
+        he: "כמה מנות יש בעט אוזמפיק?"
+      },
+      answer: {
+        en: "An Ozempic pen typically contains 4 weeks of doses when used as prescribed. The exact number of doses depends on your prescribed dosage.",
+        he: "עט אוזמפיק מכיל בדרך כלל מנות ל-4 שבועות כאשר משתמשים בו לפי המרשם. מספר המנות המדויק תלוי במינון שנרשם לך."
+      }
+    },
+    {
+      question: {
+        en: "Is Semaglutide available at lharzot?",
+        he: "האם סמגלוטיד זמין ב-lharzot?"
+      },
+      answer: {
+        en: "Yes, Semaglutide is available through lharzot with a valid prescription from our licensed healthcare providers following an online consultation.",
+        he: "כן, סמגלוטיד זמין דרך lharzot עם מרשם תקף מספקי שירותי הבריאות המורשים שלנו לאחר התייעצות מקוונת."
+      }
+    },
+    {
+      question: {
+        en: "Where to inject Semaglutide?",
+        he: "היכן להזריק סמגלוטיד?"
+      },
+      answer: {
+        en: "Semaglutide should be injected subcutaneously in the abdomen, thigh, or upper arm. Your healthcare provider will provide detailed instructions on proper injection technique.",
+        he: "יש להזריק סמגלוטיד מתחת לעור בבטן, בירך או בחלק העליון של הזרוע. ספק שירותי הבריאות שלך יספק הוראות מפורטות לטכניקת ההזרקה הנכונה."
+      }
+    },
+    {
+      question: {
+        en: "How long can Semaglutide stay out of the refrigerator?",
+        he: "כמה זמן סמגלוטיד יכול להישאר מחוץ למקרר?"
+      },
+      answer: {
+        en: "After first use, Semaglutide can be stored at room temperature (below 30°C/86°F) for up to 30 days. Unused pens should be refrigerated between 2°C to 8°C (36°F to 46°F).",
+        he: "לאחר השימוש הראשון, ניתן לאחסן סמגלוטיד בטמפרטורת החדר (מתחת ל-30 מעלות צלזיוס) עד 30 יום. עטים שלא נעשה בהם שימוש יש לשמור במקרר בין 2-8 מעלות צלזיוס."
+      }
+    },
+    {
+      question: {
+        en: "Can Semaglutide be prescribed to patients under 18?",
+        he: "האם ניתן לרשום סמגלוטיד למטופלים מתחת לגיל 18?"
+      },
+      answer: {
+        en: "Semaglutide is not currently approved for use in patients under 18 years of age. Please consult with a healthcare provider for appropriate weight management options for adolescents.",
+        he: "סמגלוטיד אינו מאושר כרגע לשימוש במטופלים מתחת לגיל 18. אנא התייעץ עם ספק שירותי בריאות לגבי אפשרויות מתאימות לניהול משקל למתבגרים."
+      }
     }
   ];
 
