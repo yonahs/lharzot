@@ -6,14 +6,18 @@ import { Globe } from 'lucide-react';
 const Header = () => {
   const { language, setLanguage } = useLanguage();
 
+  const handleLanguageToggle = () => {
+    setLanguage(language === 'he' ? 'en' : 'he');
+  };
+
   return (
     <header className="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm" dir="ltr">
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div className="container mx-auto px-4 py-2 flex justify-between items-center">
         <div className="flex-shrink-0">
           <img 
             src="/lovable-uploads/3852605e-e9d5-4729-9b1a-a8cce61e8a9d.png" 
             alt="להרזות - אבחון רפואי מקוון" 
-            className="h-10" 
+            className="h-16 w-auto" // Increased height from h-10 to h-16
           />
         </div>
         
@@ -21,7 +25,7 @@ const Header = () => {
           <Button
             variant="ghost"
             size="sm"
-            onClick={() => setLanguage(language === 'he' ? 'en' : 'he')}
+            onClick={handleLanguageToggle}
             className="flex items-center gap-2 min-w-[100px] justify-center"
           >
             <Globe className="h-4 w-4" />
