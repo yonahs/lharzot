@@ -17,7 +17,7 @@ const Header = () => {
           <img 
             src="/lovable-uploads/3852605e-e9d5-4729-9b1a-a8cce61e8a9d.png" 
             alt="להרזות - אבחון רפואי מקוון" 
-            className="h-30 w-auto" // Changed from h-20 to h-30
+            className="h-20 w-auto" // Changed from h-30 back to h-20
           />
         </div>
         
