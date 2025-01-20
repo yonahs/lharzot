@@ -11,7 +11,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex-shrink-0">
           <img 
-            src="/lovable-uploads/adc3546d-81d5-4267-be7c-fb3d6170da77.png" 
+            src="/lovable-uploads/3852605e-e9d5-4729-9b1a-a8cce61e8a9d.png" 
             alt="להרזות - אבחון רפואי מקוון" 
             className="h-10" 
           />
