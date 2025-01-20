@@ -77,9 +77,9 @@ const HeroSection = () => {
           
           <div className="flex-1">
             <img 
-              src="/lovable-uploads/medical-consultation.jpg"
+              src="/lovable-uploads/5a91bbf5-d6f0-4992-a761-d4b70cf2aad3.png"
               alt="Online Medical Consultation"
-              className="rounded-lg shadow-2xl w-full object-cover h-[500px]"
+              className="rounded-lg shadow-2xl w-full object-cover"
             />
           </div>
         </div>
