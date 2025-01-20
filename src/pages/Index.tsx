@@ -6,17 +6,21 @@ import HowItWorksSection from '../components/HowItWorksSection';
 import FAQSection from '../components/FAQSection';
 import SuccessStoriesSection from '../components/SuccessStoriesSection';
 import ContactSection from '../components/ContactSection';
+import Footer from '../components/Footer';
 
 const Index = () => {
   return (
     <LanguageProvider>
-      <div className="min-h-screen bg-white" dir="auto">
+      <div className="min-h-screen bg-white flex flex-col" dir="auto">
         <Header />
-        <HeroSection />
-        <HowItWorksSection />
-        <SuccessStoriesSection />
-        <FAQSection />
-        <ContactSection />
+        <main className="flex-grow">
+          <HeroSection />
+          <HowItWorksSection />
+          <SuccessStoriesSection />
+          <FAQSection />
+          <ContactSection />
+        </main>
+        <Footer />
       </div>
     </LanguageProvider>
   );
