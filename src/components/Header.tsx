@@ -17,7 +17,7 @@ const Header = () => {
           <img 
             src="/lovable-uploads/3852605e-e9d5-4729-9b1a-a8cce61e8a9d.png" 
             alt="להרזות - אבחון רפואי מקוון" 
-            className="h-16 w-auto" // Increased height from h-10 to h-16
+            className="h-16 w-auto"
           />
         </div>
         
@@ -36,6 +36,7 @@ const Header = () => {
           
           <Button 
             className="bg-brand-primary hover:bg-brand-primary/90 min-w-[120px]"
+            onClick={() => window.location.href = 'https://rx.lharzot.co.il'}
           >
             {language === 'he' ? 'קבע ייעוץ' : 'Book Consultation'}
           </Button>

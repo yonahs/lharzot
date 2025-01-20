@@ -69,6 +69,7 @@ const HeroSection = () => {
             <Button 
               className="bg-brand-primary hover:bg-brand-primary/90 text-lg px-8 py-6"
               size="lg"
+              onClick={() => window.location.href = 'https://rx.lharzot.co.il'}
             >
               {content.cta[language]}
               <ArrowRight className={`ml-2 ${language === 'he' ? 'rotate-180' : ''}`} />

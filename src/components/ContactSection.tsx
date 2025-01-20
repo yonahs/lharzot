@@ -10,11 +10,7 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted');
-    toast({
-      title: language === 'he' ? "הטופס נשלח בהצלחה" : "Form submitted successfully",
-      description: language === 'he' ? "ניצור איתך קשר בקרוב" : "We'll contact you soon",
-    });
+    window.location.href = 'https://rx.lharzot.co.il';
   };
 
   return (
