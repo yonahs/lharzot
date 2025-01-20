@@ -13,12 +13,42 @@ const FAQSection = () => {
   const faqs = [
     {
       question: {
-        en: "What is the consultation process?",
-        he: "מהו תהליך הייעוץ?"
+        en: "What type of medical consultation do you provide?",
+        he: "איזה סוג של ייעוץ רפואי אתם מספקים?"
       },
       answer: {
-        en: "The consultation process includes completing a medical questionnaire, followed by an online consultation with a licensed physician who will evaluate your medical condition and determine appropriate treatment options.",
-        he: "תהליך הייעוץ כולל מילוי שאלון רפואי, ולאחר מכן ייעוץ מקוון עם רופא מורשה שיעריך את מצבך הרפואי ויקבע אפשרויות טיפול מתאימות."
+        en: "We provide online medical consultations with licensed physicians who specialize in weight management. The consultation includes a comprehensive medical evaluation to determine appropriate treatment options.",
+        he: "אנחנו מספקים ייעוץ רפואי מקוון עם רופאים מורשים המתמחים בניהול משקל. הייעוץ כולל הערכה רפואית מקיפה לקביעת אפשרויות טיפול מתאימות."
+      }
+    },
+    {
+      question: {
+        en: "What are GLP-1 medications?",
+        he: "מהן תרופות GLP-1?"
+      },
+      answer: {
+        en: "GLP-1 medications are a class of prescription medications that may be prescribed for weight management in eligible patients. These medications work by affecting appetite regulation and blood sugar levels. The suitability of any medication can only be determined through proper medical evaluation.",
+        he: "תרופות GLP-1 הן קבוצת תרופות מרשם שעשויות להירשם לניהול משקל במטופלים מתאימים. תרופות אלה פועלות על ידי השפעה על ויסות התיאבון ורמות הסוכר בדם. ההתאמה לכל תרופה יכולה להיקבע רק באמצעות הערכה רפואית מתאימה."
+      }
+    },
+    {
+      question: {
+        en: "What happens during the consultation?",
+        he: "מה קורה במהלך הייעוץ?"
+      },
+      answer: {
+        en: "The consultation includes completing a medical questionnaire and an online meeting with a licensed physician who will evaluate your medical condition. Based on this evaluation, the physician will determine appropriate treatment options, if any.",
+        he: "הייעוץ כולל מילוי שאלון רפואי ופגישה מקוונת עם רופא מורשה שיעריך את מצבך הרפואי. בהתבסס על הערכה זו, הרופא יקבע אפשרויות טיפול מתאימות, אם בכלל."
+      }
+    },
+    {
+      question: {
+        en: "Will I definitely receive a prescription?",
+        he: "האם אני בהכרח אקבל מרשם?"
+      },
+      answer: {
+        en: "No. Prescriptions are only provided if deemed medically appropriate by the consulting physician, based on their professional evaluation of your specific situation and medical history. Not all patients will qualify for prescription medications.",
+        he: "לא. מרשמים ניתנים רק אם נמצאו מתאימים מבחינה רפואית על ידי הרופא המייעץ, בהתבסס על הערכה מקצועית של מצבך הספציפי וההיסטוריה הרפואית שלך. לא כל המטופלים יהיו זכאים לתרופות מרשם."
       }
     },
     {
@@ -33,42 +63,12 @@ const FAQSection = () => {
     },
     {
       question: {
-        en: "What happens after the consultation?",
-        he: "מה קורה לאחר הייעוץ?"
-      },
-      answer: {
-        en: "After the consultation, if deemed appropriate by the physician, you may receive a treatment recommendation and prescription. This is based on professional medical assessment and individual suitability.",
-        he: "לאחר הייעוץ, אם נמצא מתאים על ידי הרופא, תוכל לקבל המלצת טיפול ומרשם. זאת בהתבסס על הערכה רפואית מקצועית והתאמה אישית."
-      }
-    },
-    {
-      question: {
-        en: "Is the consultation confidential?",
-        he: "האם הייעוץ חסוי?"
-      },
-      answer: {
-        en: "Yes, all consultations are completely confidential and comply with medical privacy regulations. Your medical information is securely stored and protected.",
-        he: "כן, כל הייעוצים הם חסויים לחלוטין ועומדים בתקנות פרטיות רפואית. המידע הרפואי שלך מאוחסן ומוגן באופן מאובטח."
-      }
-    },
-    {
-      question: {
         en: "What is the cost of consultation?",
         he: "מה עלות הייעוץ?"
       },
       answer: {
-        en: "The consultation fee is 599 NIS. This includes the medical evaluation and, if appropriate, treatment recommendations.",
-        he: "עלות הייעוץ היא 599 ש\"ח. זה כולל את ההערכה הרפואית ובמידת הצורך, המלצות טיפול."
-      }
-    },
-    {
-      question: {
-        en: "Who are the consulting physicians?",
-        he: "מי הם הרופאים המייעצים?"
-      },
-      answer: {
-        en: "Our physicians are licensed medical professionals with expertise in obesity management and general medicine.",
-        he: "הרופאים שלנו הם אנשי מקצוע מורשים עם מומחיות בניהול השמנת יתר ורפואה כללית."
+        en: "The consultation fee is 599 NIS. This includes the medical evaluation and, if appropriate, prescription recommendations.",
+        he: "עלות הייעוץ היא 599 ש\"ח. זה כולל את ההערכה הרפואית ובמידת הצורך, המלצות למרשם."
       }
     }
   ];
