@@ -23,12 +23,12 @@ const HeroSection = () => {
       he: [
         "הערכה רפואית מקצועית",
         "ייעוץ מותאם אישית",
-        "תמיכה רפואית מתמשכת"
+        "מעקב רפואי מקצועי"
       ],
       en: [
         "Professional medical evaluation",
         "Personalized consultation",
-        "Ongoing medical support"
+        "Professional medical follow-up"
       ]
     },
     disclaimer: {
