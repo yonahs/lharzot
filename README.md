@@ -1,69 +1,93 @@
-# Welcome to your Lovable project
+# Leharazot - Online Medical Consultation Platform
 
-## Project info
+## Overview
 
-**URL**: https://lovable.dev/projects/d1945864-1b48-4adf-879f-d3eef65340a3
+This is a bilingual (Hebrew/English) medical consultation platform that connects patients with licensed physicians for weight management consultations. The platform provides a streamlined process for medical evaluations and treatment recommendations.
 
-## How can I edit this code?
+## Project Structure
 
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/d1945864-1b48-4adf-879f-d3eef65340a3) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+src/
+├── components/           # React components
+│   ├── BenefitsSection/    # Benefits overview
+│   ├── ContactSection/     # Contact form
+│   ├── FAQSection/        # Frequently asked questions
+│   ├── Footer/           # Site footer
+│   ├── Header/           # Site header
+│   ├── HeroSection/      # Main landing section
+│   ├── HowItWorksSection/ # Process explanation
+│   ├── LanguageContext/   # Bilingual support
+│   ├── SuccessStoriesSection/ # Patient testimonials
+│   └── ui/               # shadcn/ui components
+├── pages/               # Page components
+└── utils/              # Utility functions
 ```
 
-**Edit a file directly in GitHub**
+## Features
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- **Bilingual Support**: Full Hebrew and English language support
+- **Responsive Design**: Mobile-first approach ensuring compatibility across devices
+- **Medical Consultation**: Online booking system for medical evaluations
+- **User Education**: Comprehensive FAQ and process explanation
+- **Success Stories**: Real patient testimonials
+- **Professional UI**: Built with shadcn/ui components
+- **Modern Stack**: React, TypeScript, Tailwind CSS, Vite
 
-**Use GitHub Codespaces**
+## Technical Stack
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- **Frontend Framework**: React with TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui
+- **State Management**: React Context (Language)
+- **Routing**: React Router
+- **Form Handling**: React Hook Form
+- **Icons**: Lucide React
 
-## What technologies are used for this project?
+## Development Guidelines
 
-This project is built with .
+### Adding New Features
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+1. Create new components in `src/components/`
+2. Update CHANGELOG.md with changes
+3. Ensure bilingual support in LanguageContext
+4. Follow existing code style and TypeScript types
+5. Test responsive design
 
-## How can I deploy this project?
+### Code Style
 
-Simply open [Lovable](https://lovable.dev/projects/d1945864-1b48-4adf-879f-d3eef65340a3) and click on Share -> Publish.
+- Use TypeScript for type safety
+- Follow React functional component patterns
+- Implement responsive design with Tailwind
+- Use shadcn/ui components when possible
+- Keep components focused and small
 
-## I want to use a custom domain - is that possible?
+### Bilingual Support
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+All user-facing text should be provided in both Hebrew and English using the LanguageContext:
+
+```typescript
+const { t, language } = useLanguage();
+```
+
+## Getting Started
+
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Start development server: `npm run dev`
+4. Visit `http://localhost:5173`
+
+## Deployment
+
+The site can be deployed through the Lovable platform or manually to any static hosting service.
+
+## Contributing
+
+1. Create a feature branch
+2. Make changes
+3. Update CHANGELOG.md
+4. Submit pull request
+
+## License
+
+All rights reserved. This is a proprietary project.
