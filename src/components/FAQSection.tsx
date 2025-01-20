@@ -74,23 +74,35 @@ const FAQSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-brand-background-subtle" id="faq">
       <div className="container mx-auto px-4 max-w-3xl">
-        <h2 className="text-3xl font-bold text-center mb-4">
-          {t('faq_title')}
-        </h2>
-        <p className="text-center text-gray-600 mb-12">
-          {t('faq_subtitle')}
-        </p>
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold mb-4">
+            {language === 'he' ? 'שאלות נפוצות' : 'Frequently Asked Questions'}
+          </h2>
+          <p className="text-brand-text-secondary text-lg">
+            {language === 'he' 
+              ? 'מצאו תשובות לשאלות הנפוצות ביותר' 
+              : 'Find answers to the most common questions'}
+          </p>
+        </div>
 
-        <Accordion type="single" collapsible className="w-full">
+        <Accordion type="single" collapsible className="w-full space-y-4">
           {faqs.map((faq, index) => (
-            <AccordionItem key={index} value={`item-${index}`}>
-              <AccordionTrigger className="text-right">
-                {faq.question[language]}
+            <AccordionItem 
+              key={index} 
+              value={`item-${index}`}
+              className="bg-white rounded-lg shadow-sm border border-gray-100"
+            >
+              <AccordionTrigger className="px-6 py-4 hover:no-underline">
+                <span className="text-lg font-medium text-brand-text-primary">
+                  {faq.question[language]}
+                </span>
               </AccordionTrigger>
-              <AccordionContent>
-                {faq.answer[language]}
+              <AccordionContent className="px-6 pb-4">
+                <p className="text-brand-text-secondary">
+                  {faq.answer[language]}
+                </p>
               </AccordionContent>
             </AccordionItem>
           ))}
