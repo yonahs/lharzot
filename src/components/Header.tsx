@@ -15,9 +15,9 @@ const Header = () => {
       <div className="container mx-auto px-4 py-2 flex justify-between items-center">
         <div className="flex-shrink-0">
           <img 
-            src="/lovable-uploads/3852605e-e9d5-4729-9b1a-a8cce61e8a9d.png" 
+            src="/lovable-uploads/cc200fbe-9bd1-49cf-b93e-e84627c04a50.png" 
             alt="להרזות - אבחון רפואי מקוון" 
-            className="h-20 w-auto" // Changed from h-30 back to h-20
+            className="h-20 w-auto"
           />
         </div>
         
