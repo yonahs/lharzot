@@ -12,8 +12,8 @@ const HeroSection = () => {
       en: "Online Medical Diagnosis for Obesity"
     },
     subtitle: {
-      he: "ייעוץ רפואי מקוון - 599 ש\"ח*",
-      en: "Online Medical Consultation - 599 NIS*"
+      he: "ייעוץ רפואי מקוון",
+      en: "Online Medical Consultation"
     },
     description: {
       he: "ייעוץ טלרפואה מקוון עם רופא מומחה להערכת מצבך הרפואי והתאמת טיפול אישי.",
