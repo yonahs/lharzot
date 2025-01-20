@@ -60,16 +60,6 @@ const FAQSection = () => {
         en: "The online consultation typically takes 15-30 minutes, depending on your medical history and specific needs.",
         he: "הייעוץ המקוון נמשך בדרך כלל 15-30 דקות, בהתאם להיסטוריה הרפואית והצרכים הספציפיים שלך."
       }
-    },
-    {
-      question: {
-        en: "What is the cost of consultation?",
-        he: "מה עלות הייעוץ?"
-      },
-      answer: {
-        en: "The consultation fee is 599 NIS. This includes the medical evaluation and, if appropriate, prescription recommendations.",
-        he: "עלות הייעוץ היא 599 ש\"ח. זה כולל את ההערכה הרפואית ובמידת הצורך, המלצות למרשם."
-      }
     }
   ];
 
