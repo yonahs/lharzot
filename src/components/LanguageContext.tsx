@@ -10,64 +10,20 @@ interface LanguageContextType {
 
 const translations = {
   hero_title: {
-    en: "Medical Weight Loss Program with Semaglutide",
-    he: "תוכנית ירידה במשקל רפואית עם סמגלוטייד"
+    en: "Online Medical Diagnosis for Obesity",
+    he: "אבחון רפואי מקוון להשמנת יתר"
   },
   hero_subtitle: {
-    en: "Safe, Effective, and Medically Supervised",
-    he: "בטוח, יעיל ובפיקוח רפואי"
-  },
-  benefits_title: {
-    en: "Program Benefits",
-    he: "יתרונות התוכנית"
+    en: "Professional Medical Consultation",
+    he: "ייעוץ רפואי מקצועי"
   },
   how_it_works_title: {
     en: "How It Works",
     he: "איך זה עובד?"
   },
   how_it_works_subtitle: {
-    en: "Answer our short questionnaire so we can provide you with the best weight loss treatment.",
-    he: "ענו על השאלון הקצר שלנו, כדי שנוכל להתאים לכם את הטיפול הטוב ביותר לירידה במשקל."
-  },
-  step_1_title: {
-    en: "Start Your Weight Loss Journey",
-    he: "התחל לרדת במשקל"
-  },
-  step_1_description: {
-    en: "Get your personalized weight loss program with clear guidelines and expert support.",
-    he: "קבל את תוכנית הירידה במשקל שלך בנוחות, משולבת ירידת בית, עם הוראות מפורטות."
-  },
-  step_2_title: {
-    en: "Complete Registration",
-    he: "מרשם והדרכה לסמגלוטיד"
-  },
-  step_2_description: {
-    en: "Fill out your medical information securely and get approved by our physicians.",
-    he: "קבל את המרשם להתחלת ירידה במשקל שלך באופן מקוון. הרופא יספק הוראות מפורטות כיצד להשתמש בתרופה בצורה בטוחה ויעילה."
-  },
-  step_3_title: {
-    en: "Medical Consultation",
-    he: "התייעצות עם רופא לירידה במשקל"
-  },
-  step_3_description: {
-    en: "Connect with our medical team virtually for personalized guidance.",
-    he: "התחבר באופן וירטואלי ודון במצב הרפואי שלך, ובכל שאלה או חשש שיש לך. הרופא יערוך את התאמתך לסמגלוטיד ויספק מרשם אם מתאים."
-  },
-  step_4_title: {
-    en: "Book Appointment",
-    he: "קבע תור"
-  },
-  step_4_description: {
-    en: "Schedule your consultation with our medical team through our platform.",
-    he: "קבע תור עם רופא מורשה דרך לפלטפורמת lharzot. הפלטפורמה המוצפנת שלנו מבטיחה שכל המידע הרפואי שלך בטוח, מאובטח וחסוי."
-  },
-  faq_title: {
-    en: "Frequently Asked Questions",
-    he: "שאלות נפוצות: סמגלוטיד 101"
-  },
-  faq_subtitle: {
-    en: "Find answers to common questions about Semaglutide for weight loss.",
-    he: "להלן תשובות לשאלות נפוצות הקשורות לשימוש בסמגלוטיד לירידה במשקל."
+    en: "Our simple process for medical consultation",
+    he: "התהליך הפשוט שלנו לייעוץ רפואי"
   },
   success_stories_title: {
     en: "Success Stories",
@@ -78,8 +34,12 @@ const translations = {
     he: "התחל את המסע שלך היום"
   },
   book_appointment: {
-    en: "Book Appointment",
-    he: "קבע תור"
+    en: "Book Consultation",
+    he: "קבע ייעוץ"
+  },
+  medical_disclaimer: {
+    en: "Treatment recommendations will be provided only to eligible patients based on professional medical evaluation.",
+    he: "המלצות טיפול יינתנו רק למטופלים מתאימים על בסיס הערכה רפואית מקצועית."
   }
 };
 

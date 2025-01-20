@@ -8,32 +8,36 @@ const HeroSection = () => {
 
   const content = {
     title: {
-      he: "הבית לטיפול בהשמנת יתר",
-      en: "Home for Obesity Treatment"
+      he: "אבחון רפואי מקוון להשמנת יתר",
+      en: "Online Medical Diagnosis for Obesity"
     },
     subtitle: {
-      he: "מרשם דיגיטלי מהיר - רק 599 ש\"ח*",
-      en: "Fast Digital Prescription - Only 599 NIS*"
+      he: "ייעוץ רפואי מקוון - 599 ש\"ח*",
+      en: "Online Medical Consultation - 599 NIS*"
     },
     description: {
-      he: "ייעוץ טלרפואה מקוון לניהול משקל - קבלו מרשם ל-וגובי (Wegovy) או אוזמפיק (Ozempic) ב-599 ש\"ח בלבד!",
-      en: "Online telemedicine consultation for weight management - get a prescription for Wegovy or Ozempic for only 599 NIS!"
+      he: "ייעוץ טלרפואה מקוון עם רופא מומחה להערכת מצבך הרפואי והתאמת טיפול אישי.",
+      en: "Online telemedicine consultation with a specialist doctor to assess your medical condition and determine appropriate treatment."
     },
     benefits: {
       he: [
-        "ירידה במשקל של עד 15% תוך 68 שבועות",
-        "שיפור בלחץ דם ורמות סוכר",
-        "תמיכה רפואית מקצועית"
+        "הערכה רפואית מקצועית",
+        "ייעוץ מותאם אישית",
+        "תמיכה רפואית מתמשכת"
       ],
       en: [
-        "Weight loss of up to 15% within 68 weeks",
-        "Improvement in blood pressure and sugar levels",
-        "Professional medical support"
+        "Professional medical evaluation",
+        "Personalized consultation",
+        "Ongoing medical support"
       ]
     },
+    disclaimer: {
+      he: "*המרשם יונפק רק למטופלים מתאימים, בהתאם לשיקול דעת רפואי של הרופא המטפל",
+      en: "*Prescription will only be issued to eligible patients, according to the treating physician's medical discretion"
+    },
     cta: {
-      he: "התחל את השאלון עכשיו",
-      en: "Start Questionnaire Now"
+      he: "קבע ייעוץ עכשיו",
+      en: "Schedule Consultation Now"
     }
   };
 
@@ -59,6 +63,9 @@ const HeroSection = () => {
                 </li>
               ))}
             </ul>
+            <p className="text-sm text-gray-500 mb-6">
+              {content.disclaimer[language]}
+            </p>
             <Button 
               className="bg-brand-primary hover:bg-brand-primary/90 text-lg px-8 py-6"
               size="lg"
@@ -70,8 +77,8 @@ const HeroSection = () => {
           
           <div className="flex-1">
             <img 
-              src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7"
-              alt="Digital Health Consultation"
+              src="/lovable-uploads/medical-consultation.jpg"
+              alt="Online Medical Consultation"
               className="rounded-lg shadow-2xl w-full object-cover h-[500px]"
             />
           </div>

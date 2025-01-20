@@ -9,16 +9,14 @@ const Header = () => {
   return (
     <header className="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm" dir="ltr">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        {/* Logo */}
         <div className="flex-shrink-0">
           <img 
             src="/lovable-uploads/21ea8878-5388-47f7-9265-478e05a21484.png" 
-            alt="Lharzot" 
+            alt="להרזות - אבחון רפואי מקוון" 
             className="h-12" 
           />
         </div>
         
-        {/* Navigation and buttons */}
         <div className="flex items-center gap-4">
           <Button
             variant="ghost"
@@ -35,7 +33,7 @@ const Header = () => {
           <Button 
             className="bg-brand-primary hover:bg-brand-primary/90 min-w-[120px]"
           >
-            {language === 'he' ? 'קבע תור' : 'Book Appointment'}
+            {language === 'he' ? 'קבע ייעוץ' : 'Book Consultation'}
           </Button>
         </div>
       </div>
