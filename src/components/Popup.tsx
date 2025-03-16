@@ -12,6 +12,11 @@ interface PopupProps {
 const Popup: React.FC<PopupProps> = ({ delayMs = 5000 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const { t } = useLanguage();
+  
+  const handleButtonClick = () => {
+    window.location.href = "https://lovable.dev/projects/d1945864-1b48-4adf-879f-d3eef65340a3";
+    setIsOpen(false);
+  };
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -41,7 +46,7 @@ const Popup: React.FC<PopupProps> = ({ delayMs = 5000 }) => {
           
           <Button 
             className="w-full bg-brand-primary text-white hover:bg-brand-primary/90 mt-2"
-            onClick={() => setIsOpen(false)}
+            onClick={handleButtonClick}
           >
             {t('book_appointment')}
           </Button>
