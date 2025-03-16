@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Dialog, DialogContent, DialogClose } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogClose, DialogTitle } from "@/components/ui/dialog";
 import { X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from './LanguageContext';
@@ -14,7 +14,7 @@ const Popup: React.FC<PopupProps> = ({ delayMs = 5000 }) => {
   const { t } = useLanguage();
   
   const handleButtonClick = () => {
-    window.location.href = "https://lovable.dev/projects/d1945864-1b48-4adf-879f-d3eef65340a3";
+    window.location.href = "https://rx.lharzot.co.il/";
     setIsOpen(false);
   };
 
@@ -29,6 +29,7 @@ const Popup: React.FC<PopupProps> = ({ delayMs = 5000 }) => {
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogContent className="w-full max-w-md p-6 bg-white rounded-lg shadow-lg animate-fade-in">
+        <DialogTitle className="sr-only">{t('popup_title')}</DialogTitle>
         <DialogClose className="absolute right-4 top-4">
           <X className="h-4 w-4" />
         </DialogClose>
