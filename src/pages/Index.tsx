@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { LanguageProvider } from '../components/LanguageContext';
 import Header from '../components/Header';
@@ -7,6 +8,7 @@ import FAQSection from '../components/FAQSection';
 import SuccessStoriesSection from '../components/SuccessStoriesSection';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
+import Popup from '../components/Popup';
 
 const Index = () => {
   return (
@@ -21,6 +23,7 @@ const Index = () => {
           <ContactSection />
         </main>
         <Footer />
+        <Popup />
       </div>
     </LanguageProvider>
   );

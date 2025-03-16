@@ -40,6 +40,26 @@ const translations = {
   medical_disclaimer: {
     en: "Treatment recommendations will be provided only to eligible patients based on professional medical evaluation.",
     he: "המלצות טיפול יינתנו רק למטופלים מתאימים על בסיס הערכה רפואית מקצועית."
+  },
+  popup_title: {
+    en: "📢 Get Your Rx in 3 Easy Steps!",
+    he: "📢 קבל את המרשם שלך ב-3 צעדים פשוטים!"
+  },
+  popup_step1: {
+    en: "✔ Step 1: Fill out a quick medical questionnaire & complete payment.",
+    he: "✔ שלב 1: מלא שאלון רפואי קצר והשלם את התשלום."
+  },
+  popup_step2: {
+    en: "✔ Step 2: A doctor reviews your request.",
+    he: "✔ שלב 2: רופא בוחן את הבקשה שלך."
+  },
+  popup_step3: {
+    en: "✔ Step 3: Receive your Rx via WhatsApp/SMS within 24 hours!",
+    he: "✔ שלב 3: קבל את המרשם שלך דרך וואטסאפ/SMS תוך 24 שעות!"
+  },
+  popup_cta: {
+    en: "🚀 Fast. Simple. Hassle-Free. Start now!",
+    he: "🚀 מהיר. פשוט. ללא טרחה. התחל עכשיו!"
   }
 };
 
