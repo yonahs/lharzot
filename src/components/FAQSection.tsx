@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useLanguage } from './LanguageContext';
 import {
@@ -9,6 +10,7 @@ import {
 
 const FAQSection = () => {
   const { t, language } = useLanguage();
+  const isRtl = language === 'he';
 
   const faqs = [
     {
@@ -64,7 +66,7 @@ const FAQSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-brand-background-subtle" id="faq">
+    <section className="py-20 bg-brand-background-subtle" id="faq" dir={isRtl ? "rtl" : "ltr"}>
       <div className="container mx-auto px-4 max-w-3xl">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">
@@ -84,13 +86,13 @@ const FAQSection = () => {
               value={`item-${index}`}
               className="bg-white rounded-lg shadow-sm border border-gray-100"
             >
-              <AccordionTrigger className="px-6 py-4 hover:no-underline">
+              <AccordionTrigger className={`px-6 py-4 hover:no-underline text-${isRtl ? 'right' : 'left'}`}>
                 <span className="text-lg font-medium text-brand-text-primary">
                   {faq.question[language]}
                 </span>
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-4">
-                <p className="text-brand-text-secondary">
+                <p className={`text-brand-text-secondary text-${isRtl ? 'right' : 'left'}`}>
                   {faq.answer[language]}
                 </p>
               </AccordionContent>

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useLanguage } from './LanguageContext';
 import { Button } from './ui/button';
@@ -5,6 +6,7 @@ import { ArrowRight } from 'lucide-react';
 
 const HeroSection = () => {
   const { language } = useLanguage();
+  const isRtl = language === 'he';
 
   const content = {
     title: {
@@ -42,10 +44,10 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="pt-32 pb-20 bg-gradient-to-b from-brand-secondary to-white">
+    <section className="pt-32 pb-20 bg-gradient-to-b from-brand-secondary to-white" dir={isRtl ? "rtl" : "ltr"}>
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center gap-12">
-          <div className={`flex-1 text-${language === 'he' ? 'right' : 'left'}`}>
+          <div className={`flex-1 text-${isRtl ? 'right' : 'left'}`}>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               {content.title[language]}
             </h1>
@@ -72,7 +74,7 @@ const HeroSection = () => {
               onClick={() => window.location.href = 'https://rx.lharzot.co.il'}
             >
               {content.cta[language]}
-              <ArrowRight className={`ml-2 ${language === 'he' ? 'rotate-180' : ''}`} />
+              <ArrowRight className={`${isRtl ? 'mr-2 rotate-180' : 'ml-2'}`} />
             </Button>
           </div>
           

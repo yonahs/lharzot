@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useLanguage } from './LanguageContext';
 import { Button } from "@/components/ui/button";
@@ -7,6 +8,7 @@ import { useToast } from "@/components/ui/use-toast";
 const ContactSection = () => {
   const { t, language } = useLanguage();
   const { toast } = useToast();
+  const isRtl = language === 'he';
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -14,7 +16,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="py-20 bg-brand-secondary">
+    <section className="py-20 bg-brand-secondary" dir={isRtl ? "rtl" : "ltr"}>
       <div className="container mx-auto px-4 max-w-md">
         <h2 className="text-3xl font-bold text-center mb-8">
           {t('contact_title')}

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useLanguage } from './LanguageContext';
 import { Button } from './ui/button';
@@ -5,13 +6,14 @@ import { Globe } from 'lucide-react';
 
 const Header = () => {
   const { language, setLanguage } = useLanguage();
+  const isRtl = language === 'he';
 
   const handleLanguageToggle = () => {
     setLanguage(language === 'he' ? 'en' : 'he');
   };
 
   return (
-    <header className="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm" dir="ltr">
+    <header className="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
       <div className="container mx-auto px-4 py-2 flex justify-between items-center">
         <div className="flex-shrink-0">
           <img 

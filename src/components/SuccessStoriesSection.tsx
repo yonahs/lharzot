@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useLanguage } from './LanguageContext';
 import { Card, CardContent } from "@/components/ui/card";
@@ -5,6 +6,7 @@ import { Star } from 'lucide-react';
 
 const SuccessStoriesSection = () => {
   const { t, language } = useLanguage();
+  const isRtl = language === 'he';
 
   const stories = [
     {
@@ -31,7 +33,7 @@ const SuccessStoriesSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white" dir={isRtl ? "rtl" : "ltr"}>
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12">
           {t('success_stories_title')}
@@ -46,8 +48,8 @@ const SuccessStoriesSection = () => {
                     <Star key={i} className="w-5 h-5 text-brand-accent fill-current" />
                   ))}
                 </div>
-                <p className="text-gray-700 mb-4">{story.text[language]}</p>
-                <p className="font-semibold text-brand-primary">{story.name[language]}</p>
+                <p className={`text-gray-700 mb-4 text-${isRtl ? 'right' : 'left'}`}>{story.text[language]}</p>
+                <p className={`font-semibold text-brand-primary text-${isRtl ? 'right' : 'left'}`}>{story.name[language]}</p>
               </CardContent>
             </Card>
           ))}

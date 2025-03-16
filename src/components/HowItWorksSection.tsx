@@ -1,9 +1,11 @@
+
 import React from 'react';
 import { useLanguage } from './LanguageContext';
 import { ClipboardList, UserCheck, FileText } from 'lucide-react';
 
 const HowItWorksSection = () => {
   const { t, language } = useLanguage();
+  const isRtl = language === 'he';
 
   const steps = [
     {
@@ -42,7 +44,7 @@ const HowItWorksSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white" dir={isRtl ? "rtl" : "ltr"}>
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-4">
           {t('how_it_works_title')}
