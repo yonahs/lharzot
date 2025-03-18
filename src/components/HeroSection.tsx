@@ -79,9 +79,9 @@ const HeroSection = () => {
           </div>
           
           <div className="flex-1">
-            {/* Optimized responsive image loading with WebP */}
+            {/* Optimized responsive image loading with png fallback */}
             <img 
-              src="/lovable-uploads/5a91bbf5-d6f0-4992-a761-d4b70cf2aad3.webp"
+              src="/lovable-uploads/5a91bbf5-d6f0-4992-a761-d4b70cf2aad3.png"
               alt="Online Medical Consultation"
               loading="eager" 
               width="600"
