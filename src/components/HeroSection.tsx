@@ -79,9 +79,9 @@ const HeroSection = () => {
           </div>
           
           <div className="flex-1">
-            {/* New optimized image using WebP format */}
+            {/* New optimized image using WebP format with cache-busting parameter */}
             <img 
-              src="/lovable-uploads/87550178-23ec-4b6b-891b-2ee7d2fc16df.png"
+              src="/lovable-uploads/87550178-23ec-4b6b-891b-2ee7d2fc16df.png?v=1"
               alt="Online Medical Weight Loss Consultation"
               loading="eager" 
               width="600"
