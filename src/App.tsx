@@ -8,10 +8,12 @@ import { useEffect } from "react";
 import Index from "./pages/Index";
 import { initAnalytics } from "./utils/analytics";
 
+// Create a client with custom settings
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
       refetchOnWindowFocus: false, // Reduce unnecessary requests
+      staleTime: 1000 * 60 * 5, // 5 minutes
     },
   },
 });
