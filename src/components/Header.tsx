@@ -19,6 +19,9 @@ const Header = () => {
           <img 
             src="/lovable-uploads/cc200fbe-9bd1-49cf-b93e-e84627c04a50.png" 
             alt="להרזות - אבחון רפואי מקוון" 
+            width="160"
+            height="80"
+            loading="eager"
             className="h-20 w-auto"
           />
         </div>

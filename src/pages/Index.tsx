@@ -1,14 +1,20 @@
 
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import { LanguageProvider, useLanguage } from '../components/LanguageContext';
 import Header from '../components/Header';
 import HeroSection from '../components/HeroSection';
-import HowItWorksSection from '../components/HowItWorksSection';
-import FAQSection from '../components/FAQSection';
-import SuccessStoriesSection from '../components/SuccessStoriesSection';
-import ContactSection from '../components/ContactSection';
-import Footer from '../components/Footer';
-import Popup from '../components/Popup';
+// Lazy load components that aren't visible in the initial viewport
+const HowItWorksSection = lazy(() => import('../components/HowItWorksSection'));
+const FAQSection = lazy(() => import('../components/FAQSection'));
+const SuccessStoriesSection = lazy(() => import('../components/SuccessStoriesSection'));
+const ContactSection = lazy(() => import('../components/ContactSection'));
+const Footer = lazy(() => import('../components/Footer'));
+const Popup = lazy(() => import('../components/Popup'));
+
+// Simple loading fallback
+const LoadingFallback = () => <div className="min-h-[200px] flex items-center justify-center">
+  <div className="w-8 h-8 border-4 border-brand-primary border-t-transparent rounded-full animate-spin"></div>
+</div>;
 
 const IndexContent = () => {
   const { language } = useLanguage();
@@ -19,13 +25,17 @@ const IndexContent = () => {
       <Header />
       <main className="flex-grow">
         <HeroSection />
-        <HowItWorksSection />
-        <SuccessStoriesSection />
-        <FAQSection />
-        <ContactSection />
+        <Suspense fallback={<LoadingFallback />}>
+          <HowItWorksSection />
+          <SuccessStoriesSection />
+          <FAQSection />
+          <ContactSection />
+        </Suspense>
       </main>
-      <Footer />
-      <Popup />
+      <Suspense fallback={<></>}>
+        <Footer />
+        <Popup />
+      </Suspense>
     </div>
   );
 };

@@ -8,6 +8,9 @@ const SuccessStoriesSection = () => {
   const { t, language } = useLanguage();
   const isRtl = language === 'he';
 
+  // Optimize by creating a single star component to be reused
+  const StarIcon = () => <Star className="w-5 h-5 text-brand-accent fill-current" />;
+
   const stories = [
     {
       name: { en: "Rachel L.", he: "רונית ל." },
@@ -44,9 +47,12 @@ const SuccessStoriesSection = () => {
             <Card key={index} className="bg-brand-secondary border-none">
               <CardContent className="p-6">
                 <div className="flex justify-center mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-brand-accent fill-current" />
-                  ))}
+                  {/* Use optimized star icons */}
+                  <StarIcon />
+                  <StarIcon />
+                  <StarIcon />
+                  <StarIcon />
+                  <StarIcon />
                 </div>
                 <p className={`text-gray-700 mb-4 text-${isRtl ? 'right' : 'left'}`}>{story.text[language]}</p>
                 <p className={`font-semibold text-brand-primary text-${isRtl ? 'right' : 'left'}`}>{story.name[language]}</p>

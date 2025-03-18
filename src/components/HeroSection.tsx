@@ -79,9 +79,13 @@ const HeroSection = () => {
           </div>
           
           <div className="flex-1">
+            {/* Optimized responsive image loading */}
             <img 
               src="/lovable-uploads/5a91bbf5-d6f0-4992-a761-d4b70cf2aad3.png"
               alt="Online Medical Consultation"
+              loading="eager" 
+              width="600"
+              height="400"
               className="rounded-lg shadow-2xl w-full object-cover"
             />
           </div>

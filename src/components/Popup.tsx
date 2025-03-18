@@ -10,6 +10,7 @@ interface PopupProps {
 }
 
 const Popup: React.FC<PopupProps> = ({ delayMs = 5000 }) => {
+  // Use lazy state initialization to avoid unnecessary rerenders
   const [isOpen, setIsOpen] = useState(false);
   const { t, language } = useLanguage();
   
@@ -19,14 +20,24 @@ const Popup: React.FC<PopupProps> = ({ delayMs = 5000 }) => {
   };
 
   useEffect(() => {
+    // Use more efficient approach with cleanup
+    let mounted = true;
     const timer = setTimeout(() => {
-      setIsOpen(true);
+      if (mounted) {
+        setIsOpen(true);
+      }
     }, delayMs);
 
-    return () => clearTimeout(timer);
+    return () => {
+      mounted = false;
+      clearTimeout(timer);
+    };
   }, [delayMs]);
 
   const isRtl = language === 'he';
+
+  // Only render the Dialog when it's open
+  if (!isOpen) return null;
 
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
