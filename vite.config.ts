@@ -11,13 +11,24 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
   },
   build: {
-    // Add chunk size warning limit
+    // Optimize chunks and reduce bundle size
+    cssCodeSplit: true,
     chunkSizeWarningLimit: 1000,
+    sourcemap: false,
+    minify: 'terser',
+    terserOptions: {
+      compress: {
+        drop_console: true,
+        drop_debugger: true,
+      },
+    },
     rollupOptions: {
       output: {
+        // Ensure chunks are reasonably sized
         manualChunks: {
           vendor: ['react', 'react-dom', 'react-router-dom'],
-          ui: ['@radix-ui/react-alert-dialog', '@radix-ui/react-dialog', '@radix-ui/react-tooltip']
+          ui: ['@radix-ui/react-alert-dialog', '@radix-ui/react-dialog', '@radix-ui/react-tooltip'],
+          utils: ['@tanstack/react-query', 'clsx', 'tailwind-merge']
         }
       }
     }

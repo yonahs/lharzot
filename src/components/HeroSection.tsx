@@ -43,6 +43,11 @@ const HeroSection = () => {
     }
   };
 
+  // Using a more efficient approach for the button click handler
+  const handleCtaClick = () => {
+    window.location.href = 'https://rx.lharzot.co.il';
+  };
+
   return (
     <section className="pt-32 pb-20 bg-gradient-to-b from-brand-secondary to-white" dir={isRtl ? "rtl" : "ltr"}>
       <div className="container mx-auto px-4">
@@ -71,7 +76,7 @@ const HeroSection = () => {
             <Button 
               className="bg-brand-primary hover:bg-brand-primary/90 text-lg px-8 py-6"
               size="lg"
-              onClick={() => window.location.href = 'https://rx.lharzot.co.il'}
+              onClick={handleCtaClick}
             >
               {content.cta[language]}
               <ArrowRight className={`${isRtl ? 'mr-2 rotate-180' : 'ml-2'}`} />
@@ -79,7 +84,7 @@ const HeroSection = () => {
           </div>
           
           <div className="flex-1">
-            {/* New optimized image using WebP format with cache-busting parameter */}
+            {/* Optimized image with width and height attributes to prevent layout shifts */}
             <img 
               src="/lovable-uploads/87550178-23ec-4b6b-891b-2ee7d2fc16df.png?v=1"
               alt="Online Medical Weight Loss Consultation"
